@@ -2,14 +2,16 @@
 
 Master documentation of every writeup in this directory.
 
-**Totals:** 18 unique challenges — 3 TVX CTF (archived) + 10 InIt CTF +
-5 NexPloit CTF (all solved).
+**Totals:** 22 unique challenges — 3 TVX CTF (archived) + 10 InIt CTF +
+5 NexPloit CTF + 4 PWNZONE-26 / SAFCTF (all solved; 2 SAFCTF challenges
+also documented in progress).
 
 | Event | Flag format | Location |
 |-------|-------------|----------|
 | TVX CTF (archived) | `TVX{...}` / `Tvx{...}` | [`TVX-CTF/`](TVX-CTF/README.md) |
 | Live session 2026-11-14 | `InIt{...}` | [`InIt-CTF/`](InIt-CTF/README.md) |
 | NexPloit CTF | `nex{...}` / `NEX{...}` / `flag{...}` | [`Nexploit-CTF/`](Nexploit-CTF/README.md) |
+| PWNZONE-26 / SAFCTF | `safctf{...}` | [`SAFCTF/`](SAFCTF/README.md) |
 
 ---
 
@@ -52,6 +54,20 @@ Full session index with per-challenge writeups:
 | 3 | 1024 Redirects | Web | 150 | `NEX{th1s_captcha_c0uldnt_tcha}` | [Nexploit-CTF/1024-redirects](Nexploit-CTF/1024-redirects/writeup.md) |
 | 4 | Reload | Web / Race condition | 150 | `NEX{w0w_th0se_w3r3_s0me_f4st_r3l04ds}` | [Nexploit-CTF/reload](Nexploit-CTF/reload/writeup.md) |
 | 5 | Cookie | Web / Access control | 200 | `flag{hat3l_di_l1k3s_c00ki3s}` | [Nexploit-CTF/cookie](Nexploit-CTF/cookie/writeup.md) |
+
+---
+
+## Index — PWNZONE-26 / SAFCTF
+
+| # | Challenge | Category | Flag | Writeup |
+|---|-----------|----------|------|---------|
+| 1 | Inside Job (SSRF) — "Orbit Dispatch" | Web / SSRF | `safctf{9f3a458f3a26e6372b5b5467e3e51edf}` | [SAFCTF/inside-job-ssrf](SAFCTF/inside-job-ssrf/writeup.md) |
+| 2 | Archived (XXE) — "Relic Society" | Web / XXE | `safctf{…}` (value not recorded; `/flag8b9d5b8e264a.txt`) | [SAFCTF/archived-xxe](SAFCTF/archived-xxe/writeup.md) |
+| 3 | The Suitors of Ithaca | OSINT (5 stages) | `safctf{trail_of_outis_a1}` · `safctf{watchful_eye_b2}` · `safctf{alcinous_window_c3}` · `safctf{unraveled_thread_d4}` · `safctf{recognition_e5}` | [SAFCTF/suitors-of-ithaca](SAFCTF/suitors-of-ithaca/README.md) |
+| 4 | Arcane, the Aftermath | OSINT / Web recon (500 pts) | `safctf{92890a18-9192-4627-b464-306797af13b0}` | [SAFCTF/arcane-the-aftermath](SAFCTF/arcane-the-aftermath/writeup.md) |
+
+**In progress (unsolved):** [Citrus Proof (JWT)](SAFCTF/IN-PROGRESS/citrus-proof/writeup.md),
+[One of These Things (SQLi)](SAFCTF/IN-PROGRESS/one-of-these-things/writeup.md).
 
 ---
 
@@ -150,6 +166,18 @@ nex{81N4rYD45HC1PH3r}
 NEX{th1s_captcha_c0uldnt_tcha}
 NEX{w0w_th0se_w3r3_s0me_f4st_r3l04ds}
 flag{hat3l_di_l1k3s_c00ki3s}
+```
+
+**PWNZONE-26 / SAFCTF (`safctf{`):**
+```
+safctf{9f3a458f3a26e6372b5b5467e3e51edf}
+safctf{…}  (Archived/XXE — value not recorded; /flag8b9d5b8e264a.txt)
+safctf{trail_of_outis_a1}
+safctf{watchful_eye_b2}
+safctf{alcinous_window_c3}
+safctf{unraveled_thread_d4}
+safctf{recognition_e5}
+safctf{92890a18-9192-4627-b464-306797af13b0}
 ```
 
 **Signals worth remembering:** `AccessDenied` vs `NoSuchKey` distinguishes
