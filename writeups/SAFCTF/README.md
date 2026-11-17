@@ -9,9 +9,4 @@ Flag format `safctf{...}`.
 | 3 | The Suitors of Ithaca (5-stage OSINT chain) | OSINT | 5 flags | [suitors-of-ithaca](suitors-of-ithaca/) |
 | 4 | Arcane, the Aftermath (500 pts) | OSINT / Web recon | `safctf{92890a18-9192-4627-b464-306797af13b0}` | [arcane-the-aftermath](arcane-the-aftermath/) |
 
-## In progress (unsolved)
-
-- [Citrus Proof](IN-PROGRESS/citrus-proof/) — Web, JWT role escalation
-- [One of These Things](IN-PROGRESS/one-of-these-things/) — Web, SQLite injection
-
-Each solved folder: `SUMMARY.md` (template format) + `writeup.md` (full commands).
+Each folder: `SUMMARY.md` (template format) + `writeup.md` (full commands).

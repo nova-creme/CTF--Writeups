@@ -9,7 +9,7 @@ folder contains a template-format `SUMMARY.md` plus the original detailed
 | TVX CTF (archived) | `TVX{...}` / `Tvx{...}` / `TVXCTF{...}` | [TVX-CTF/](TVX-CTF/) | 10 solved, 1 in progress |
 | InIt CTF (2026-11-14) | `InIt{...}` | [InIt-CTF/](InIt-CTF/) | 10 solved |
 | NexPloit CTF | `nex{...}` / `NEX{...}` / `flag{...}` | [Nexploit-CTF/](Nexploit-CTF/) | 5 solved |
-| PWNZONE-26 / SAFCTF | `safctf{...}` | [SAFCTF/](SAFCTF/) | 4 solved (9 flags), 2 in progress |
+| PWNZONE-26 / SAFCTF | `safctf{...}` | [SAFCTF/](SAFCTF/) | 4 solved (9 flags) |
 
 Start a new writeup by copying [`_TEMPLATE.md`](_TEMPLATE.md).
 

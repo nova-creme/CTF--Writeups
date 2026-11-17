@@ -3,8 +3,8 @@
 Master documentation of every writeup in this directory.
 
 **Totals:** 29 unique challenges — 10 TVX CTF (archived) + 10 InIt CTF +
-5 NexPloit CTF + 4 PWNZONE-26 / SAFCTF (all solved; one TVX and two SAFCTF
-challenges also documented in progress).
+5 NexPloit CTF + 4 PWNZONE-26 / SAFCTF (all solved; one TVX challenge also
+documented in progress).
 
 | Event | Flag format | Location |
 |-------|-------------|----------|
@@ -75,9 +75,6 @@ Session-wide lessons: [TVX-CTF/GOTCHAS.md](TVX-CTF/GOTCHAS.md).
 | 2 | Archived (XXE) — "Relic Society" | Web / XXE | `safctf{…}` (value not recorded; `/flag8b9d5b8e264a.txt`) | [SAFCTF/archived-xxe](SAFCTF/archived-xxe/writeup.md) |
 | 3 | The Suitors of Ithaca | OSINT (5 stages) | `safctf{trail_of_outis_a1}` · `safctf{watchful_eye_b2}` · `safctf{alcinous_window_c3}` · `safctf{unraveled_thread_d4}` · `safctf{recognition_e5}` | [SAFCTF/suitors-of-ithaca](SAFCTF/suitors-of-ithaca/README.md) |
 | 4 | Arcane, the Aftermath | OSINT / Web recon (500 pts) | `safctf{92890a18-9192-4627-b464-306797af13b0}` | [SAFCTF/arcane-the-aftermath](SAFCTF/arcane-the-aftermath/writeup.md) |
-
-**In progress (unsolved):** [Citrus Proof (JWT)](SAFCTF/IN-PROGRESS/citrus-proof/writeup.md),
-[One of These Things (SQLi)](SAFCTF/IN-PROGRESS/one-of-these-things/writeup.md).
 
 ---
 
