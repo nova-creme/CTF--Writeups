@@ -11,7 +11,6 @@ Flag format `InIt{...}`.
 | 5 | macOS Infostealer PCAP | Forensics (network) | Medium | `InIt{k3ych4in_crumbs_l34k3d_0v3r_pl41n_http}` | [macos-stealer-pcap](macos-stealer-pcap/) |
 | 6 | Super Cookie | Web (Flask) | Medium | `InIt{C00k1e_F0rg3ry_1s_Sup3r}` | [super-cookie](super-cookie/) |
 | 7 | Careless Twins | Crypto (RSA) | Medium | `InIt{n3v3r_r3us3_pr1m3s_1n_rs4}` | [careless-twins](careless-twins/) |
-| 8 | India Tourist Map QR | Misc / stego | Hard | *unsolved* | [india-map-qr](india-map-qr/) |
 
 Difficulty ratings are estimates where the challenge did not publish one.
 Each folder: `SUMMARY.md` (template format) + the original detailed writeup.

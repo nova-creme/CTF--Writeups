@@ -2,8 +2,8 @@
 
 Master documentation of every writeup in this directory.
 
-**Totals:** 11 unique challenges — 3 TVX CTF (archived) + 8 live-session
-challenges (7 solved, 1 in progress).
+**Totals:** 10 unique challenges — 3 TVX CTF (archived) + 7 live-session
+challenges (all solved).
 
 | Event | Flag format | Location |
 |-------|-------------|----------|
@@ -26,7 +26,6 @@ Full session index with per-challenge writeups:
 | 5 | macOS Infostealer PCAP | Forensics (network) | — | `InIt{k3ych4in_crumbs_l34k3d_0v3r_pl41n_http}` | [init-ctf/macos-stealer-pcap](init-ctf/macos-stealer-pcap/writeup.md) |
 | 6 | Super Cookie | Web (Flask forgery) | 100 | `InIt{C00k1e_F0rg3ry_1s_Sup3r}` | [init-ctf/super-cookie](init-ctf/super-cookie/writeup.md) |
 | 7 | Careless Twins | Crypto (RSA shared prime) | — | `InIt{n3v3r_r3us3_pr1m3s_1n_rs4}` | [init-ctf/careless-twins](init-ctf/careless-twins/writeup.md) |
-| 8 | India Tourist Map (QR) | Misc / stego | — | *in progress* | [init-ctf/india-map-qr NOTES](init-ctf/india-map-qr/NOTES.md) |
 
 ---
 
@@ -137,7 +136,7 @@ evidence, not decoration.
 
 ## Session summary (2026-11-14, `InIt{}`)
 
-Eight challenges were presented in one live session; seven solved:
+Seven challenges were presented in one live session; all seven solved:
 
 1. **Midnight key** — Vigenère with key `midnight` ("the hour when everything
    goes quiet"); validated against the `InIt` known-plaintext prefix.
@@ -155,9 +154,6 @@ Eight challenges were presented in one live session; seven solved:
 7. **Careless Twins** — both servers reused the same 1024-bit prime `p`;
    `gcd(n1, n2)` factored both moduli instantly. Red herrings: seeded
    `random` and an unused `base` variable. Full batch-GCD attack.
-8. **India map QR** — UNSOLVED. Text says "scan the QR" but no QR found after
-   an extensive sweep; full elimination list and next steps in
-   [init-ctf/india-map-qr/NOTES.md](init-ctf/india-map-qr/NOTES.md).
 
 ## Repository conventions
 
