@@ -2,13 +2,13 @@
 
 Master documentation of every writeup in this directory.
 
-**Totals:** 22 unique challenges — 3 TVX CTF (archived) + 10 InIt CTF +
-5 NexPloit CTF + 4 PWNZONE-26 / SAFCTF (all solved; 2 SAFCTF challenges
-also documented in progress).
+**Totals:** 29 unique challenges — 10 TVX CTF (archived) + 10 InIt CTF +
+5 NexPloit CTF + 4 PWNZONE-26 / SAFCTF (all solved; one TVX and two SAFCTF
+challenges also documented in progress).
 
 | Event | Flag format | Location |
 |-------|-------------|----------|
-| TVX CTF (archived) | `TVX{...}` / `Tvx{...}` | [`TVX-CTF/`](TVX-CTF/README.md) |
+| TVX CTF (archived) | `TVX{...}` / `Tvx{...}` / `TVXCTF{...}` | [`TVX-CTF/`](TVX-CTF/README.md) |
 | Live session 2026-11-14 | `InIt{...}` | [`InIt-CTF/`](InIt-CTF/README.md) |
 | NexPloit CTF | `nex{...}` / `NEX{...}` / `flag{...}` | [`Nexploit-CTF/`](Nexploit-CTF/README.md) |
 | PWNZONE-26 / SAFCTF | `safctf{...}` | [`SAFCTF/`](SAFCTF/README.md) |
@@ -42,6 +42,16 @@ Full session index with per-challenge writeups:
 | 1 | TraceVX | DFIR (Windows endpoint) | 440 | `TVX{Ahmed@WIN-TRACE-01_TraceTelemetry-185.192.48.239_8MiB_411ff385}` | [TVX-CTF/tracevx](TVX-CTF/tracevx/writeup.md) | AD1 image, netcat quiz service |
 | 2 | Ghosty note (GhostNote) | Forensics / DFIR | — | `Tvx{665504d169ef04e47fb9b8f7a9b5bfbe97277dc9}` | [TVX-CTF/ghosty-note](TVX-CTF/ghosty-note/writeup.md) · [reproduce](TVX-CTF/ghosty-note/reproduce/README.md) | `solve.py` reproduces the flag |
 | 3 | The Forgotten Tenant | Cloud (AWS / CloudTrail) | — | `TVX{Cl0ud_s3cur1ty}` | [TVX-CTF/the-forgotten-tenant](TVX-CTF/the-forgotten-tenant/writeup.md) | one-shot bash repro in §6 |
+| 4 | Twist Me A Twister | Reverse Engineering | 310 | `TVX{Fl4ggy_fl4g_fl4g_tw15ty_tw15t_tw15t}` | [TVX-CTF/twist-me-a-twister](TVX-CTF/twist-me-a-twister/writeup.md) | .NET CIL, dnfile/dncil |
+| 5 | Summer Is Over | Reverse Engineering | 240 | `TVX{4nd_S0_7h3_5un_Sh1n35}` | [TVX-CTF/summer-is-over](TVX-CTF/summer-is-over/writeup.md) | .NET CIL, blob+schedule |
+| 6 | Creeper's Shared Prime | Crypto | 100 | `TVXCTF{the_creeper_reused_a_prime}` | [TVX-CTF/creepers-shared-prime](TVX-CTF/creepers-shared-prime/writeup.md) | RSA shared prime |
+| 7 | Steve's Lost Book | Crypto | n/a | `TVXCTF{steve_found_the_hidden_chest}` | [TVX-CTF/steves-lost-book](TVX-CTF/steves-lost-book/writeup.md) | Base64 |
+| 8 | Chest (DO NOT SORT) | Crypto | n/a | `TVX{never_dig_straight_down}` | [TVX-CTF/chest-do-not-sort](TVX-CTF/chest-do-not-sort/writeup.md) | homophonic substitution + annealing |
+| 9 | ASK ME | OSINT | 290 | `TVX{45C11_C0D3_15_U53FU11}` | [TVX-CTF/ask-me](TVX-CTF/ask-me/writeup.md) | Minecraft hotbars → 7z password |
+| 10 | Ender chest (cryptoone) | Crypto | n/a | `TVX{D1dn5_F4lL_4_7h3_7r4p_7h15_t1me}` (unconfirmed) | [TVX-CTF/ender-chest-cryptoone](TVX-CTF/ender-chest-cryptoone/writeup.md) | smooth-order ECDLP; decoy rejected |
+
+**Not solved:** [OSINT, employee story](TVX-CTF/IN-PROGRESS/employee-story/writeup.md).
+Session-wide lessons: [TVX-CTF/GOTCHAS.md](TVX-CTF/GOTCHAS.md).
 
 ---
 
@@ -157,6 +167,13 @@ player user → S3 archive bucket (find sts:ExternalId)
            → sts:AssumeRole legacy-migration-role   (needs ExternalId)
            → sts:AssumeRole incident-response-role
            → s3:GetObject stitched key → evidence.json → TVX{Cl0ud_s3cur1ty}
+TVX{Fl4ggy_fl4g_fl4g_tw15ty_tw15t_tw15t}
+TVX{4nd_S0_7h3_5un_Sh1n35}
+TVXCTF{the_creeper_reused_a_prime}
+TVXCTF{steve_found_the_hidden_chest}
+TVX{never_dig_straight_down}
+TVX{45C11_C0D3_15_U53FU11}
+TVX{D1dn5_F4lL_4_7h3_7r4p_7h15_t1me}  (unconfirmed; decoy TVX{tNt_g035_B00m_C0ngr4t5} rejected)
 ```
 
 **NexPloit CTF:**
