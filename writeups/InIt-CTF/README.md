@@ -11,6 +11,9 @@ Flag format `InIt{...}`.
 | 5 | macOS Infostealer PCAP | Forensics (network) | Medium | `InIt{k3ych4in_crumbs_l34k3d_0v3r_pl41n_http}` | [macos-stealer-pcap](macos-stealer-pcap/) |
 | 6 | Super Cookie | Web (Flask) | Medium | `InIt{C00k1e_F0rg3ry_1s_Sup3r}` | [super-cookie](super-cookie/) |
 | 7 | Careless Twins | Crypto (RSA) | Medium | `InIt{n3v3r_r3us3_pr1m3s_1n_rs4}` | [careless-twins](careless-twins/) |
+| 8 | Double-encoded string | Misc / Crypto | Easy | `InIt{r0t_th3n_b64_1s_n0t_s3cur1ty}` | [double-encoded-string](double-encoded-string/) |
+| 9 | Known Plaintext PRNG | Crypto (XOR + LCG) | Medium | `InIt{kn0wn_pl41nt3xt_4tt4cks_4r3_c00l}` | [known-plaintext-prng](known-plaintext-prng/) |
+| 10 | The Troll's Ticket | Misc (file carving) | Medium | `InIt{j0urney_4cr0ss_1ndia}` | [trolls-ticket](trolls-ticket/) |
 
 Difficulty ratings are estimates where the challenge did not publish one.
 Each folder: `SUMMARY.md` (template format) + the original detailed writeup.
