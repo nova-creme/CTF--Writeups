@@ -19,6 +19,7 @@ Flag format `MCTF26{...}`. This event is also known as Martina CTF / MCTF 2026.
 | 13 | The Library | Web (crawling) | Medium | 1000 | `MCTF26{tH3_s34rCh_h45_p41D_0ff}` | [the-library](the-library/) |
 | 14 | The Seer (I) | Forensics (USB HID) | Medium | 1000 | `MCTF26{m4RT1N5_kn0w5_Wh4t_y0u_wr0T3}` | [the-seer-i](the-seer-i/) |
 | 15 | The Fortune Teller (I) | Reversing (binary patching) | Medium | 1000 | `MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}` | [the-fortune-teller-i](the-fortune-teller-i/) |
+| 16 | The Fishy Board | Stego (chess AI oracle) | Medium | 937 | `MCTF26{S0M3_CH3K3R5}` | [the-fishy-board](the-fishy-board/) |
 
 Each folder contains a template-format `SUMMARY.md` plus the original detailed `writeup.md`.
 
@@ -26,7 +27,8 @@ Notes:
 
 - Rows 1–11 came from the existing `/home/novacreme/Downloads/galaxy/ctf_writeups_MCTF/`
   collection. Rows 12–15 were reconstructed from session artifacts after the flags
-  were confirmed; they are shorter command-level writeups.
+  were confirmed; they are shorter command-level writeups. Row 16 was solved and
+  CTFd-verified during a later session.
 - The Onion / "SSH: The Secure Network" and The Exam / "ApprenticesEntryExam" are
   alternate labels already represented by rows 5 and 9.
 - Solves without a recoverable flag or finished writeup are not included here

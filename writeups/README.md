@@ -10,7 +10,7 @@ folder contains a template-format `SUMMARY.md` plus the original detailed
 | InIt CTF (2026-11-14) | `InIt{...}` | [InIt-CTF/](InIt-CTF/) | 10 solved |
 | NexPloit CTF | `nex{...}` / `NEX{...}` / `flag{...}` | [Nexploit-CTF/](Nexploit-CTF/) | 5 solved |
 | PWNZONE-26 / SAFCTF | `safctf{...}` | [SAFCTF/](SAFCTF/) | 10 solved (2 flag values not recorded) |
-| Mārtiņa-CTF 2026 | `MCTF26{...}` | [MCTF-2026/](MCTF-2026/) | 15 solved |
+| Mārtiņa-CTF 2026 | `MCTF26{...}` | [MCTF-2026/](MCTF-2026/) | 16 solved |
 
 Start a new writeup by copying [`_TEMPLATE.md`](_TEMPLATE.md).
 

@@ -2,8 +2,8 @@
 
 Master documentation of every writeup in this directory.
 
-**Totals:** 50 unique challenges — 10 TVX CTF (archived) + 10 InIt CTF +
-5 NexPloit CTF + 10 PWNZONE-26 / SAFCTF + 15 Mārtiņa-CTF 2026 (all solved;
+**Totals:** 51 unique challenges — 10 TVX CTF (archived) + 10 InIt CTF +
+5 NexPloit CTF + 10 PWNZONE-26 / SAFCTF + 16 Mārtiņa-CTF 2026 (all solved;
 two SAFCTF flag values were not preserved and one TVX challenge is also
 documented in progress).
 
@@ -39,6 +39,7 @@ Full event index with per-challenge writeups:
 | 13 | The Library | Web (crawling) | `MCTF26{tH3_s34rCh_h45_p41D_0ff}` | [MCTF-2026/the-library](MCTF-2026/the-library/writeup.md) |
 | 14 | The Seer (I) | Forensics (USB HID) | `MCTF26{m4RT1N5_kn0w5_Wh4t_y0u_wr0T3}` | [MCTF-2026/the-seer-i](MCTF-2026/the-seer-i/writeup.md) |
 | 15 | The Fortune Teller (I) | Reversing (binary patching) | `MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}` | [MCTF-2026/the-fortune-teller-i](MCTF-2026/the-fortune-teller-i/writeup.md) |
+| 16 | The Fishy Board | Stego (chess AI oracle) | `MCTF26{S0M3_CH3K3R5}` | [MCTF-2026/the-fishy-board](MCTF-2026/the-fishy-board/writeup.md) |
 
 ---
 
@@ -313,6 +314,7 @@ MCTF26{m4k3_1t_gr33n}
 MCTF26{tH3_s34rCh_h45_p41D_0ff}
 MCTF26{m4RT1N5_kn0w5_Wh4t_y0u_wr0T3}
 MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}
+MCTF26{S0M3_CH3K3R5}
 ```
 
 **Newly consolidated SAFCTF flags:**
@@ -327,10 +329,12 @@ safctf{dadb56ae-eede-422e-87cb-744462cdfda0}  (intermediate; scoreboard rejected
 
 ## Session summary (Mārtiņa-CTF 2026, `MCTF26{}`)
 
-Eleven writeups were imported from a separately maintained MCTF collection and
-four more were reconstructed from confirmed session artifacts. Other solves
+Eleven writeups were imported from a separately maintained MCTF collection,
+four more were reconstructed from confirmed session artifacts, and one (The
+Fishy Board) was solved and CTFd-verified in a later session. Other solves
 (A Mere Cantrip, The Demon, The Blob, The Kernel and several intro tasks) had no
 recoverable final writeup and are intentionally not indexed. Recurring themes:
 layered encodings and weak key handling in crypto, client-controlled
-cookies/roles and large-link crawling in web, USB HID reconstruction in
-forensics, and conditional-jump patching in reversing.
+cookies/roles and large-link crawling in web, USB HID reconstruction and an
+octal-leaking chess oracle in forensics/stego, and conditional-jump patching in
+reversing.
