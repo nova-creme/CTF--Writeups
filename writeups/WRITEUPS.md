@@ -2,8 +2,9 @@
 
 Master documentation of every writeup in this directory.
 
-**Totals:** 29 unique challenges — 10 TVX CTF (archived) + 10 InIt CTF +
-5 NexPloit CTF + 4 PWNZONE-26 / SAFCTF (all solved; one TVX challenge also
+**Totals:** 50 unique challenges — 10 TVX CTF (archived) + 10 InIt CTF +
+5 NexPloit CTF + 10 PWNZONE-26 / SAFCTF + 15 Mārtiņa-CTF 2026 (all solved;
+two SAFCTF flag values were not preserved and one TVX challenge is also
 documented in progress).
 
 | Event | Flag format | Location |
@@ -12,6 +13,32 @@ documented in progress).
 | Live session 2026-11-14 | `InIt{...}` | [`InIt-CTF/`](InIt-CTF/README.md) |
 | NexPloit CTF | `nex{...}` / `NEX{...}` / `flag{...}` | [`Nexploit-CTF/`](Nexploit-CTF/README.md) |
 | PWNZONE-26 / SAFCTF | `safctf{...}` | [`SAFCTF/`](SAFCTF/README.md) |
+| Mārtiņa-CTF 2026 | `MCTF26{...}` | [`MCTF-2026/`](MCTF-2026/README.md) |
+
+---
+
+## Index — Mārtiņa-CTF 2026 (`MCTF26{}`)
+
+Full event index with per-challenge writeups:
+[`MCTF-2026/README.md`](MCTF-2026/README.md)
+
+| # | Challenge | Category | Flag | Writeup |
+|---|-----------|----------|------|---------|
+| 1 | All Your Base Are Belong To Us | Crypto (base encoding) | `MCTF26{v3Ry_b453D_t45k_w45Nt_1t}` | [MCTF-2026/all-your-base](MCTF-2026/all-your-base/writeup.md) |
+| 2 | The Sealed Letter | Crypto (repeating-key XOR) | `MCTF26{r3p34t1ng_k3ys_br34k_s34ls}` | [MCTF-2026/sealed-letter](MCTF-2026/sealed-letter/writeup.md) |
+| 3 | The Multi-Prime Seal | Crypto (RSA reuse) | `MCTF26{R0ll1ng_my_0wn_crypt0_t0t13ns_fru5tr4_5un7}` | [MCTF-2026/multi-prime-seal](MCTF-2026/multi-prime-seal/writeup.md) |
+| 4 | PwnIntro | Pwn (ret2win) | `MCTF26{tH4t_was_4actU4lLy_v3rY_s1mpl3}` | [MCTF-2026/pwnintro](MCTF-2026/pwnintro/writeup.md) |
+| 5 | SSH: The Secure Network | Pwn / network | `MCTF26{Th1s_w45_supp0s3d_t0_b3_4_s3cure_n37w0rk}` | [MCTF-2026/ssh-secure-network](MCTF-2026/ssh-secure-network/writeup.md) |
+| 6 | The checksum | Web (file upload) | `MCTF26{cH3ck5uMM3D_4Nd_phpwned}` | [MCTF-2026/the-checksum](MCTF-2026/the-checksum/writeup.md) |
+| 7 | The Industries (I) | Web (cookie forgery) | `MCTF26{w3Lc0m3_t0_Th3_Gu1ld}` | [MCTF-2026/the-industries-i](MCTF-2026/the-industries-i/writeup.md) |
+| 8 | The Industries (II) | Web (Flask auth) | `MCTF26{p5ycH1c_d3S7R0y3d}` | [MCTF-2026/the-industries-ii](MCTF-2026/the-industries-ii/writeup.md) |
+| 9 | ApprenticesEntryExam | Web (blockchain) | `MCTF26{c9ngr4tz_0n_p4551ng_th3_f1r5t_3x4m}` | [MCTF-2026/apprentices-entry-exam](MCTF-2026/apprentices-entry-exam/writeup.md) |
+| 10 | [INTRO] What Is Crypto? | Crypto (encodings) | `MCTF26{3nc0d1ng_1s_n0t_3ncrypt10n_w1z4rd}` | [MCTF-2026/intro-what-is-crypto](MCTF-2026/intro-what-is-crypto/writeup.md) |
+| 11 | [INTRO] The Apprentice's Cipher | Crypto (Caesar / Vigenère / XOR) | `MCTF26{k3ys_m4tt3r_4ppr3nt1c3}` | [MCTF-2026/intro-apprentices-cipher](MCTF-2026/intro-apprentices-cipher/writeup.md) |
+| 12 | [INTRO] The Computer | Web (guided intro) | `MCTF26{m4k3_1t_gr33n}` | [MCTF-2026/the-computer](MCTF-2026/the-computer/writeup.md) |
+| 13 | The Library | Web (crawling) | `MCTF26{tH3_s34rCh_h45_p41D_0ff}` | [MCTF-2026/the-library](MCTF-2026/the-library/writeup.md) |
+| 14 | The Seer (I) | Forensics (USB HID) | `MCTF26{m4RT1N5_kn0w5_Wh4t_y0u_wr0T3}` | [MCTF-2026/the-seer-i](MCTF-2026/the-seer-i/writeup.md) |
+| 15 | The Fortune Teller (I) | Reversing (binary patching) | `MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}` | [MCTF-2026/the-fortune-teller-i](MCTF-2026/the-fortune-teller-i/writeup.md) |
 
 ---
 
@@ -75,6 +102,12 @@ Session-wide lessons: [TVX-CTF/GOTCHAS.md](TVX-CTF/GOTCHAS.md).
 | 2 | Archived (XXE) — "Relic Society" | Web / XXE | `safctf{…}` (value not recorded; `/flag8b9d5b8e264a.txt`) | [SAFCTF/archived-xxe](SAFCTF/archived-xxe/writeup.md) |
 | 3 | The Suitors of Ithaca | OSINT (5 stages) | `safctf{trail_of_outis_a1}` · `safctf{watchful_eye_b2}` · `safctf{alcinous_window_c3}` · `safctf{unraveled_thread_d4}` · `safctf{recognition_e5}` | [SAFCTF/suitors-of-ithaca](SAFCTF/suitors-of-ithaca/README.md) |
 | 4 | Arcane, the Aftermath | OSINT / Web recon (500 pts) | `safctf{92890a18-9192-4627-b464-306797af13b0}` | [SAFCTF/arcane-the-aftermath](SAFCTF/arcane-the-aftermath/writeup.md) |
+| 5 | WINTER TRAVEL — NORTHERN LIGHTS | Crypto / Web (AES-GCM) | `safctf{3fd96340be891c629f7e3f3a42202743}` | [SAFCTF/winter-travel-northern-lights](SAFCTF/winter-travel-northern-lights/writeup.md) |
+| 6 | COSTUME DESIGN — CROWN STUDIO | AD / AD CS | Flag recovered, value not recorded | [SAFCTF/costume-design-crown-studio](SAFCTF/costume-design-crown-studio/writeup.md) |
+| 7 | WINTER PAVILION — ICE FESTIVAL | AD / Group Policy | `safctf{8a97f3881e4828d37406ed0953ff9573}` | [SAFCTF/winter-pavilion-ice-festival](SAFCTF/winter-pavilion-ice-festival/writeup.md) |
+| 8 | Prism Orchestra | Binary side-channel | `safctf{MVRKQ2APHL7WPM78}` | [SAFCTF/prism-orchestra](SAFCTF/prism-orchestra/writeup.md) |
+| 9 | Three Encores | Crypto / API submission | `safctf{dadb56ae-eede-422e-87cb-744462cdfda0}` (intermediate; scoreboard rejected) | [SAFCTF/three-encores](SAFCTF/three-encores/writeup.md) |
+| 10 | The Last OSINT Challenge | OSINT / data parsing | Final value not recorded (test flag only) | [SAFCTF/the-last-osint-challenge](SAFCTF/the-last-osint-challenge/writeup.md) |
 
 ---
 
@@ -230,9 +263,12 @@ Ten challenges were presented in one live session; all ten solved:
 
 ## Repository conventions
 
-* **Per-event directories** (`TVX-CTF/`, `InIt-CTF/`, `Nexploit-CTF/`): one folder
-  per challenge containing a template-format `SUMMARY.md` plus the original
-  detailed `writeup.md` — full narrative, IoCs, scripts and lessons learned.
+* **Per-event directories** (`TVX-CTF/`, `InIt-CTF/`, `Nexploit-CTF/`,
+  `SAFCTF/`, `MCTF-2026/`): one folder per challenge containing a
+  template-format `SUMMARY.md` plus the original detailed `writeup.md` —
+  full narrative, IoCs, scripts and lessons learned where available.
+  Six SAFCTF folders and all MCTF-2026 folders were consolidated from external
+  note collections into this format.
 * **`TVX-CTF/ghosty-note/reproduce/`**: repo-style mirror ("solutions written
   by Buffy") with solve scripts (`solve.py`, `candidates.py`),
   reverse-engineering notes (`NotionUpdate.disasm.txt`) and harness sources.
@@ -259,3 +295,42 @@ TVX{Ahmed@WIN-TRACE-01_TraceTelemetry-185.192.48.239_8MiB_411ff385}
 Tvx{665504d169ef04e47fb9b8f7a9b5bfbe97277dc9}
 TVX{Cl0ud_s3cur1ty}
 ```
+
+**Mārtiņa-CTF 2026 (`MCTF26{`):**
+```
+MCTF26{v3Ry_b453D_t45k_w45Nt_1t}
+MCTF26{r3p34t1ng_k3ys_br34k_s34ls}
+MCTF26{R0ll1ng_my_0wn_crypt0_t0t13ns_fru5tr4_5un7}
+MCTF26{tH4t_was_4actU4lLy_v3rY_s1mpl3}
+MCTF26{Th1s_w45_supp0s3d_t0_b3_4_s3cure_n37w0rk}
+MCTF26{cH3ck5uMM3D_4Nd_phpwned}
+MCTF26{w3Lc0m3_t0_Th3_Gu1ld}
+MCTF26{p5ycH1c_d3S7R0y3d}
+MCTF26{c9ngr4tz_0n_p4551ng_th3_f1r5t_3x4m}
+MCTF26{3nc0d1ng_1s_n0t_3ncrypt10n_w1z4rd}
+MCTF26{k3ys_m4tt3r_4ppr3nt1c3}
+MCTF26{m4k3_1t_gr33n}
+MCTF26{tH3_s34rCh_h45_p41D_0ff}
+MCTF26{m4RT1N5_kn0w5_Wh4t_y0u_wr0T3}
+MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}
+```
+
+**Newly consolidated SAFCTF flags:**
+```
+safctf{3fd96340be891c629f7e3f3a42202743}
+safctf{8a97f3881e4828d37406ed0953ff9573}
+safctf{MVRKQ2APHL7WPM78}
+safctf{dadb56ae-eede-422e-87cb-744462cdfda0}  (intermediate; scoreboard rejected)
+```
+
+---
+
+## Session summary (Mārtiņa-CTF 2026, `MCTF26{}`)
+
+Eleven writeups were imported from a separately maintained MCTF collection and
+four more were reconstructed from confirmed session artifacts. Other solves
+(A Mere Cantrip, The Demon, The Blob, The Kernel and several intro tasks) had no
+recoverable final writeup and are intentionally not indexed. Recurring themes:
+layered encodings and weak key handling in crypto, client-controlled
+cookies/roles and large-link crawling in web, USB HID reconstruction in
+forensics, and conditional-jump patching in reversing.
