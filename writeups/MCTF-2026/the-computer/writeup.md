@@ -1,23 +1,36 @@
-# MCTF 2026 — [INTRO] The Computer
+---
+title: "[INTRO] The Computer"
+ctf: "MCTF 2026"
+date: 2026-11-20
+category: web
+difficulty: easy
+points: 1000
+flag_format: "MCTF26{...}"
+---
 
-- **Category:** Web (guided intro)
-- **Source:** reconstructed from session artifacts and confirmed flag submissions
-- **Flag:** `MCTF26{m4k3_1t_gr33n}`
+# [INTRO] The Computer
 
-## Objective
+## Summary
 
-A guided tutorial task introducing the web challenge environment; the completion flag is published in the description.
+A guided web onboarding task. The challenge description publishes the completion flag directly, so the solve is recognising that no service interaction is required and submitting the stated value.
 
-## Solution path
+## Solution
 
-1. Opened the challenge page and read the description.
-2. Submitted the stated completion flag to mark the tutorial task finished.
-3. No exploit or service interaction was required.
+### Step 1: Read the description
 
-## Result
+The intro page walks through the web challenge environment and includes the completion flag in its text. There is no form, cookie or endpoint to exploit — the flag is given as part of the tutorial.
 
-`MCTF26{m4k3_1t_gr33n}`
+```python
+flag = "MCTF26{m4k3_1t_gr33n}"
+print(flag)
+```
 
-## Key lesson
+### Step 2: Submit it
 
-Intro tasks sometimes publish their own flag; check the description before over-engineering a solution.
+Submit that value to CTFd to mark the challenge solved.
+
+## Flag
+
+```
+MCTF26{m4k3_1t_gr33n}
+```

@@ -6,7 +6,6 @@ category: crypto
 difficulty: medium
 points: N/A
 flag_format: "MCTF26{...}"
-author: "novacreme"
 ---
 
 # The Multi-Prime Seal

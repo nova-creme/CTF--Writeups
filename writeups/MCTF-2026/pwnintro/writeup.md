@@ -6,7 +6,6 @@ category: pwn
 difficulty: easy
 points: N/A
 flag_format: "MCTF26{...}"
-author: "novacreme"
 ---
 
 # PwnIntro

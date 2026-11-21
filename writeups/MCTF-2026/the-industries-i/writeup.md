@@ -6,7 +6,6 @@ category: web
 difficulty: easy
 points: 1000
 flag_format: "MCTF26{...}"
-author: "novacreme"
 ---
 
 # The Industries (I)

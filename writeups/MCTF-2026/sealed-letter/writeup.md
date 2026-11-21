@@ -6,7 +6,6 @@ category: crypto
 difficulty: easy
 points: N/A
 flag_format: "MCTF26{...}"
-author: "novacreme"
 ---
 
 # The Sealed Letter

@@ -6,7 +6,6 @@ category: crypto
 difficulty: easy
 points: 1000
 flag_format: "MCTF26{...}"
-author: "novacreme"
 ---
 
 # [INTRO] The Apprentice's Cipher

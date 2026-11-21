@@ -6,7 +6,6 @@ category: pwn
 difficulty: medium
 points: N/A
 flag_format: "MCTF26{...}"
-author: "novacreme"
 ---
 
 # SSH: The Secure Network

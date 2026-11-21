@@ -6,7 +6,6 @@ category: web
 difficulty: easy
 points: N/A
 flag_format: "MCTF26{...}"
-author: "novacreme"
 ---
 
 # ApprenticesEntryExam

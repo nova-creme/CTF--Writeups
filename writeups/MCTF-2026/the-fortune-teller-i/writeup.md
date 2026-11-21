@@ -1,24 +1,43 @@
-# MCTF 2026 — The Fortune Teller (I)
+---
+title: "The Fortune Teller (I)"
+ctf: "MCTF 2026"
+date: 2026-11-20
+category: reverse
+difficulty: medium
+points: 1000
+flag_format: "MCTF26{...}"
+---
 
-- **Category:** Reversing (binary patching)
-- **Source:** reconstructed from session artifacts and confirmed flag submissions
-- **Flag:** `MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}`
+# The Fortune Teller (I)
 
-## Objective
+## Summary
 
-Patch a fortune-telling binary so the unworthy path falls through to the routine that prints the decrypted fortune.
+The binary gates its final "fortune" on a `worthy` global in `.bss` that is never written, so the check always fails. Flipping one conditional jump and stubbing `sleep()` makes the existing decryption routine print the flag.
 
-## Solution path
+## Solution
 
-1. Disassembled `fortuneteller`; identified `main`, `gen1`–`gen4` and the global `worthy` at `0x40403c` (`.bss`, never written).
-2. Located the `gen3` check at `0x40159a`: `jne 0x4015a2` falls through to the “not worthy” branch and `exit(1)`.
-3. Patched file offset `0x15a2` from `0x75` (`jne`) to `0xeb` (`jmp`).
-4. Built a stub `sleep()` shared object and ran with `LD_PRELOAD=/tmp/nosleep.so /tmp/fortuneteller_patched` so `gen4` printed the fortune immediately.
+### Step 1: Find the dead gate
 
-## Result
+`main` calls `gen1`–`gen4`. The global `worthy` at `0x40403c` lives in `.bss` and no instruction writes to it. In `gen3` the check at `0x40159a` is `jne 0x4015a2`; with `worthy == 0` the jump is taken into the "not worthy" branch and `exit(1)`.
 
-`MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}`
+### Step 2: Patch and run
 
-## Key lesson
+Invert the branch (`jne` → `jmp`) at file offset `0x15a2`, then preload a stub `sleep()` so `gen4` prints immediately.
 
-Check `.bss` globals that gate success: if nothing writes them, a one-byte conditional-jump patch is often sufficient.
+```bash
+# 0x75 = jne, 0xeb = jmp at file offset 0x15a2
+printf '\xeb' | dd of=fortuneteller_patched bs=1 seek=$((0x15a2)) conv=notrunc
+
+cat > nosleep.c <<'EOF'
+int sleep(unsigned int s) { return 0; }
+EOF
+gcc -shared -fPIC -o nosleep.so nosleep.c
+
+LD_PRELOAD=./nosleep.so ./fortuneteller_patched
+```
+
+## Flag
+
+```
+MCTF26{tH4t_w4s_4actU4lLy_v3rY_s1mpl3}
+```
